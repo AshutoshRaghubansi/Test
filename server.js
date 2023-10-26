@@ -35,7 +35,7 @@ glob.sync("./models/*.js").forEach(function (file) {
 
 // Start our app!
 const app = require("./app");
-app.set("port", process.env.PORT || 80);
+app.set("port", process.env.PORT || 5050);
 const server = app.listen(app.get("port"), () => {
   console.log(`Express running → On PORT : ${server.address().port}`);
 });
